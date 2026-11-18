@@ -1,0 +1,328 @@
+{
+  "skills": [
+    {
+      "name": "planner",
+      "kind": "custom",
+      "group": "pre-build",
+      "path": "custom/planner",
+      "summary": "Leads the user from an idea to a validated plan and hands it to the executor.",
+      "author": "Custom",
+      "license": "MIT"
+    },
+    {
+      "name": "executor",
+      "kind": "custom",
+      "group": "build",
+      "path": "custom/executor",
+      "summary": "Runs a validated plan end to end with worker subagents, without asking the user.",
+      "author": "Custom",
+      "license": "MIT"
+    },
+    {
+      "name": "grilling",
+      "kind": "vendor",
+      "group": "pre-build",
+      "path": "vendor/grilling",
+      "summary": "The grill-me step: interviews the user one decision at a time to stress-test the idea.",
+      "author": "Matt Pocock",
+      "license": "MIT",
+      "source": {
+        "repo": "https://github.com/mattpocock/skills",
+        "path": "skills/productivity/grilling",
+        "ref": "5863806dd4e15c63174bee4e7515a4256792ecfa"
+      }
+    },
+    {
+      "name": "test-driven-development",
+      "kind": "vendor",
+      "group": "build",
+      "path": "vendor/test-driven-development",
+      "summary": "Write a failing test, make the smallest change that passes, verify.",
+      "offerWhen": "the work changes behavior that tests can pin down",
+      "author": "Addy",
+      "license": "MIT",
+      "source": {
+        "repo": "https://github.com/addyosmani/agent-skills",
+        "path": "skills/test-driven-development",
+        "ref": "39b723ceebf81474d0557c1fecd01eddab585563"
+      }
+    },
+    {
+      "name": "spec-driven-development",
+      "kind": "vendor",
+      "group": "build",
+      "path": "vendor/spec-driven-development",
+      "summary": "Define expected behavior and acceptance criteria before implementing.",
+      "offerWhen": "no spec exists yet, or the behavior is new",
+      "author": "Addy",
+      "license": "MIT",
+      "source": {
+        "repo": "https://github.com/addyosmani/agent-skills",
+        "path": "skills/spec-driven-development",
+        "ref": "39b723ceebf81474d0557c1fecd01eddab585563"
+      }
+    },
+    {
+      "name": "source-driven-development",
+      "kind": "vendor",
+      "group": "build",
+      "path": "vendor/source-driven-development",
+      "summary": "Research the code, docs and sources first and ground decisions in them.",
+      "offerWhen": "the work depends on a framework, API or library behavior",
+      "author": "Addy",
+      "license": "MIT",
+      "source": {
+        "repo": "https://github.com/addyosmani/agent-skills",
+        "path": "skills/source-driven-development",
+        "ref": "39b723ceebf81474d0557c1fecd01eddab585563"
+      }
+    },
+    {
+      "name": "security-and-hardening",
+      "kind": "vendor",
+      "group": "build",
+      "path": "vendor/security-and-hardening",
+      "summary": "Review threats, validation, permissions and safe data handling.",
+      "offerWhen": "the work touches input, auth, secrets or user data",
+      "author": "Addy",
+      "license": "MIT",
+      "source": {
+        "repo": "https://github.com/addyosmani/agent-skills",
+        "path": "skills/security-and-hardening",
+        "ref": "39b723ceebf81474d0557c1fecd01eddab585563"
+      }
+    },
+    {
+      "name": "performance-optimization",
+      "kind": "vendor",
+      "group": "build",
+      "path": "vendor/performance-optimization",
+      "summary": "Measure and improve the performance problems that matter.",
+      "offerWhen": "there is a performance goal or a suspected regression",
+      "author": "Addy",
+      "license": "MIT",
+      "source": {
+        "repo": "https://github.com/addyosmani/agent-skills",
+        "path": "skills/performance-optimization",
+        "ref": "39b723ceebf81474d0557c1fecd01eddab585563"
+      }
+    },
+    {
+      "name": "doubt-driven-development",
+      "kind": "vendor",
+      "group": "build",
+      "path": "vendor/doubt-driven-development",
+      "summary": "Put assumptions and decisions to an adversarial check with evidence.",
+      "offerWhen": "the work rests on risky or untested assumptions",
+      "author": "Addy",
+      "license": "MIT",
+      "source": {
+        "repo": "https://github.com/addyosmani/agent-skills",
+        "path": "skills/doubt-driven-development",
+        "ref": "39b723ceebf81474d0557c1fecd01eddab585563"
+      }
+    },
+    {
+      "name": "constraint-driven-development",
+      "kind": "vendor",
+      "group": "build",
+      "path": "vendor/constraint-driven-development",
+      "summary": "Turn constraints into concrete, checked quality criteria.",
+      "offerWhen": "there are quality bars to hold (coverage, size, latency)",
+      "author": "Addy",
+      "license": "MIT",
+      "source": {
+        "repo": "https://github.com/addyosmani/agent-skills",
+        "path": "skills/constraint-driven-development",
+        "ref": "39b723ceebf81474d0557c1fecd01eddab585563"
+      }
+    },
+    {
+      "name": "documentation-and-adrs",
+      "kind": "vendor",
+      "group": "build",
+      "path": "vendor/documentation-and-adrs",
+      "summary": "Update docs or record decisions as ADRs when it applies.",
+      "offerWhen": "the work changes public APIs or makes a lasting decision",
+      "author": "Addy",
+      "license": "MIT",
+      "source": {
+        "repo": "https://github.com/addyosmani/agent-skills",
+        "path": "skills/documentation-and-adrs",
+        "ref": "39b723ceebf81474d0557c1fecd01eddab585563"
+      }
+    },
+    {
+      "name": "observability-and-instrumentation",
+      "kind": "vendor",
+      "group": "build",
+      "path": "vendor/observability-and-instrumentation",
+      "summary": "Add the logs, metrics and traces that explain behavior and diagnose failures.",
+      "offerWhen": "the code runs in production or is hard to debug",
+      "author": "Addy",
+      "license": "MIT",
+      "source": {
+        "repo": "https://github.com/addyosmani/agent-skills",
+        "path": "skills/observability-and-instrumentation",
+        "ref": "39b723ceebf81474d0557c1fecd01eddab585563"
+      }
+    },
+    {
+      "name": "incremental-implementation",
+      "kind": "vendor",
+      "group": "build",
+      "path": "vendor/incremental-implementation",
+      "summary": "Split large work into thin, verifiable increments.",
+      "offerWhen": "the work touches several files or modules",
+      "author": "Addy",
+      "license": "MIT",
+      "source": {
+        "repo": "https://github.com/addyosmani/agent-skills",
+        "path": "skills/incremental-implementation",
+        "ref": "39b723ceebf81474d0557c1fecd01eddab585563"
+      }
+    },
+    {
+      "name": "git-workflow-and-versioning",
+      "kind": "vendor",
+      "group": "build",
+      "path": "vendor/git-workflow-and-versioning",
+      "summary": "Follow Git and versioning practices.",
+      "offerWhen": "the user chose GitHub-related work (branches, PRs, releases)",
+      "author": "Addy",
+      "license": "MIT",
+      "source": {
+        "repo": "https://github.com/addyosmani/agent-skills",
+        "path": "skills/git-workflow-and-versioning",
+        "ref": "39b723ceebf81474d0557c1fecd01eddab585563"
+      }
+    },
+    {
+      "name": "ci-cd-and-automation",
+      "kind": "vendor",
+      "group": "build",
+      "path": "vendor/ci-cd-and-automation",
+      "summary": "Change pipelines, checks or automation.",
+      "offerWhen": "the user chose CI/CD or automation work",
+      "author": "Addy",
+      "license": "MIT",
+      "source": {
+        "repo": "https://github.com/addyosmani/agent-skills",
+        "path": "skills/ci-cd-and-automation",
+        "ref": "39b723ceebf81474d0557c1fecd01eddab585563"
+      }
+    },
+    {
+      "name": "shipping-and-launch",
+      "kind": "vendor",
+      "group": "post-build",
+      "path": "vendor/shipping-and-launch",
+      "summary": "Prepare a production launch: checklist, rollout, monitoring and rollback.",
+      "author": "Addy",
+      "license": "MIT",
+      "source": {
+        "repo": "https://github.com/addyosmani/agent-skills",
+        "path": "skills/shipping-and-launch",
+        "ref": "39b723ceebf81474d0557c1fecd01eddab585563"
+      }
+    },
+    {
+      "name": "handoff",
+      "kind": "vendor",
+      "group": "post-build",
+      "path": "vendor/handoff",
+      "summary": "Write a handoff document so another agent or session can continue the work.",
+      "author": "Matt Pocock",
+      "license": "MIT",
+      "source": {
+        "repo": "https://github.com/mattpocock/skills",
+        "path": "skills/productivity/handoff",
+        "ref": "5863806dd4e15c63174bee4e7515a4256792ecfa"
+      }
+    },
+    {
+      "name": "api-and-interface-design",
+      "kind": "vendor",
+      "group": "extras",
+      "path": "vendor/api-and-interface-design",
+      "summary": "Design clear API contracts and interfaces.",
+      "author": "Addy",
+      "license": "MIT",
+      "source": {
+        "repo": "https://github.com/addyosmani/agent-skills",
+        "path": "skills/api-and-interface-design",
+        "ref": "39b723ceebf81474d0557c1fecd01eddab585563"
+      }
+    },
+    {
+      "name": "browser-testing-with-devtools",
+      "kind": "vendor",
+      "group": "extras",
+      "path": "vendor/browser-testing-with-devtools",
+      "summary": "Test browser flows with developer tools.",
+      "author": "Addy",
+      "license": "MIT",
+      "source": {
+        "repo": "https://github.com/addyosmani/agent-skills",
+        "path": "skills/browser-testing-with-devtools",
+        "ref": "39b723ceebf81474d0557c1fecd01eddab585563"
+      }
+    },
+    {
+      "name": "code-review-and-quality",
+      "kind": "vendor",
+      "group": "extras",
+      "path": "vendor/code-review-and-quality",
+      "summary": "Review changes for defects, risks and maintainability.",
+      "author": "Addy",
+      "license": "MIT",
+      "source": {
+        "repo": "https://github.com/addyosmani/agent-skills",
+        "path": "skills/code-review-and-quality",
+        "ref": "39b723ceebf81474d0557c1fecd01eddab585563"
+      }
+    },
+    {
+      "name": "debugging-and-error-recovery",
+      "kind": "vendor",
+      "group": "extras",
+      "path": "vendor/debugging-and-error-recovery",
+      "summary": "Find the root cause of failures and improve recovery.",
+      "author": "Addy",
+      "license": "MIT",
+      "source": {
+        "repo": "https://github.com/addyosmani/agent-skills",
+        "path": "skills/debugging-and-error-recovery",
+        "ref": "39b723ceebf81474d0557c1fecd01eddab585563"
+      }
+    },
+    {
+      "name": "code-simplification",
+      "kind": "vendor",
+      "group": "extras",
+      "path": "vendor/code-simplification",
+      "summary": "Reduce complexity without changing behavior.",
+      "author": "Addy",
+      "license": "MIT",
+      "source": {
+        "repo": "https://github.com/addyosmani/agent-skills",
+        "path": "skills/code-simplification",
+        "ref": "39b723ceebf81474d0557c1fecd01eddab585563"
+      }
+    },
+    {
+      "name": "impeccable",
+      "kind": "vendor",
+      "group": "extras",
+      "path": "vendor/impeccable",
+      "summary": "Improve frontend design and visual quality: critique, polish, typography, layout, motion.",
+      "author": "Paul Bakaus",
+      "license": "Apache-2.0",
+      "source": {
+        "repo": "https://github.com/pbakaus/impeccable",
+        "path": ".agent/skills/impeccable",
+        "ref": "d41d9860b0094dcb68030657da63461212835aaa"
+      }
+    }
+  ]
+}
